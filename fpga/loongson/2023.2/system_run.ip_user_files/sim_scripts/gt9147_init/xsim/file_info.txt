@@ -1,0 +1,2 @@
+gt9147_init.v,verilog,xil_defaultlib,c:/Users/XF/Desktop/chiplabdemo/chiplab/IP/xilinx_ip/gt9147_init/sim/gt9147_init.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

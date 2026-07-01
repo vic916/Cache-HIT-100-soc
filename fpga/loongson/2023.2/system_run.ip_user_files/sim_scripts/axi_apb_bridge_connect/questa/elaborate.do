@@ -1,0 +1,1 @@
+vopt -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xpm -L lib_pkg_v1_0_3 -L axi_apb_bridge_v3_0_19 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.axi_apb_bridge_connect xil_defaultlib.glbl -o axi_apb_bridge_connect_opt

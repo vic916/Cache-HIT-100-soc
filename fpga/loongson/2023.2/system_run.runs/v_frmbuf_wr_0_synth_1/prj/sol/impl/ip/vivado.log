@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug 19 22:11:57 2025
+# Process ID: 18104
+# Current directory: C:/Users/XF/Desktop/chiplabdemo/chiplab/fpga/loongson/2023.2/system_run.runs/v_frmbuf_wr_0_synth_1/prj/sol/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Users/XF/Desktop/chiplabdemo/chiplab/fpga/loongson/2023.2/system_run.runs/v_frmbuf_wr_0_synth_1/prj/sol/impl/ip/vivado.log
+# Journal file: C:/Users/XF/Desktop/chiplabdemo/chiplab/fpga/loongson/2023.2/system_run.runs/v_frmbuf_wr_0_synth_1/prj/sol/impl/ip\vivado.jou
+# Running On: LAPTOP-ER9DDLRF, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34008 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 489.961 ; gain = 174.918
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 19 22:12:04 2025...

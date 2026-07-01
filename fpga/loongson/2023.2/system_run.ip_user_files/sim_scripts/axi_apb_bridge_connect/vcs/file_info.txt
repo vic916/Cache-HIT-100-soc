@@ -1,0 +1,8 @@
+xpm_cdc.sv,systemverilog,xpm,D:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_fifo.sv,systemverilog,xpm,D:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,
+xpm_memory.sv,systemverilog,xpm,D:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_VCOMP.vhd,
+lib_pkg_v1_0_rfs.vhd,vhdl,lib_pkg_v1_0_3,../../../ipstatic/hdl/lib_pkg_v1_0_rfs.vhd,
+axi_apb_bridge_v3_0_vh_rfs.vhd,vhdl,axi_apb_bridge_v3_0_19,../../../ipstatic/hdl/axi_apb_bridge_v3_0_vh_rfs.vhd,
+axi_apb_bridge_connect.vhd,vhdl,xil_defaultlib,../../../ip/axi_apb_bridge_connect/sim/axi_apb_bridge_connect.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

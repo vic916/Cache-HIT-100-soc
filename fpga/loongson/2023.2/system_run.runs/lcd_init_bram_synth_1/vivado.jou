@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug 19 23:37:01 2025
+# Process ID: 53360
+# Current directory: C:/Users/XF/Desktop/chiplabdemo/chiplab/fpga/loongson/2023.2/system_run.runs/lcd_init_bram_synth_1
+# Command line: vivado.exe -log lcd_init_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_init_bram.tcl
+# Log file: C:/Users/XF/Desktop/chiplabdemo/chiplab/fpga/loongson/2023.2/system_run.runs/lcd_init_bram_synth_1/lcd_init_bram.vds
+# Journal file: C:/Users/XF/Desktop/chiplabdemo/chiplab/fpga/loongson/2023.2/system_run.runs/lcd_init_bram_synth_1\vivado.jou
+# Running On: LAPTOP-ER9DDLRF, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34008 MB
+#-----------------------------------------------------------
+source lcd_init_bram.tcl -notrace

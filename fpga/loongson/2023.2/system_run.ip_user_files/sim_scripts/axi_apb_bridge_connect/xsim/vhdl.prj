@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../ip/axi_apb_bridge_connect/sim/axi_apb_bridge_connect.vhd" \
+
+# Do not sort compile order
+nosort

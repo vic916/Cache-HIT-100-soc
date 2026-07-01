@@ -1,0 +1,59 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 1,379        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 1,156        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   754        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   723        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   611        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |   540        | user array partition pragmas are applied                                               |
+|               | (2) simplification          |   540        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |   549        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |   885        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |   897        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |   876        | loop and instruction simplification                                                    |
+|               | (2) parallelization         |   857        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |   801        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |   801        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |   780        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |   744        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+----------------------+----------------+---------------+---------------+---------------+---------------+
+| Function                              | Location             | Compile/Link   | Unroll/Inline | Array/Struct  | Performance   | HW Transforms |
++---------------------------------------+----------------------+----------------+---------------+---------------+---------------+---------------+
+| + v_frmbuf_wr                         | v_frmbuf_wr.cpp:115  | 1,379          | 611           | 897           | 801           | 744           |
+|  + FrmbufWrHlsDataFlow                | v_frmbuf_wr.cpp:69   | 1,274          | 554           | 841           | 757           | 688           |
+|                                       | v_frmbuf_wr.h:250    |    4           |               |               |               |               |
+|   + AXIvideo2MultiPixStream           | v_frmbuf_wr.cpp:213  |  617           | 244           | 259           | 191           | 167           |
+|      Scalar                           | hls_video_core.h:196 |    5           |               |               |               |               |
+|      reg<unsigned short>              | x_hls_utils.h:222    |    2 (2 calls) |   2 (2 calls) |   2 (2 calls) |   2 (2 calls) |   8 (2 calls) |
+|    + AXIGetBitFields<48, ap_uint<...  | hls_axi_io.h:83      |  222 (3 calls) |               |               |               |               |
+|       AXIGetBitFields<48, ap_uint<... | hls_axi_io.h:60      |  204 (3 calls) |               |               |               |               |
+|   + MultiPixStream2Bytes              | v_frmbuf_wr.cpp:326  |  563           | 250           | 537           | 525           | 465           |
+|      Scalar                           | hls_video_core.h:196 |    5           |               |               |               |               |
+|     Bytes2AXIMMvideo                  | v_frmbuf_wr.cpp:1265 |   50           |  34           |  35           |  31           |  42           |
++---------------------------------------+----------------------+----------------+---------------+---------------+---------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

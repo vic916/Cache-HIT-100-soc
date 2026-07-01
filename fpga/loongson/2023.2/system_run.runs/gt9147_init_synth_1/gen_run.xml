@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="gt9147_init_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1755617787">
+  <File Type="PA-TCL" Name="gt9147_init.tcl"/>
+  <File Type="REPORTS-TCL" Name="gt9147_init_reports.tcl"/>
+  <File Type="RDS-RDS" Name="gt9147_init.vds"/>
+  <File Type="RDS-UTIL" Name="gt9147_init_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="gt9147_init_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="gt9147_init.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/gt9147_init" RelGenDir="$PGENDIR/gt9147_init">
+    <File Path="$PPRDIR/../../../IP/xilinx_ip/gt9147_init/gt9147_init.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="gt9147_init"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/gt9147_init" RelGenDir="$PGENDIR/gt9147_init">
+    <File Path="$PPRDIR/../../../IP/xilinx_ip/gt9147_init/gt9147_init.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="gt9147_init"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

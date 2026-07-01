@@ -1,0 +1,2 @@
+axi_apb_bridge_connect.vhd,vhdl,xil_defaultlib,../../../ip/axi_apb_bridge_connect/sim/axi_apb_bridge_connect.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

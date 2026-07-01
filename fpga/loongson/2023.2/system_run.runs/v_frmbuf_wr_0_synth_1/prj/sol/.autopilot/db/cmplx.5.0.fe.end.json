@@ -1,0 +1,182 @@
+{
+    "1": {
+        "name": "entry_proc",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "0",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "226",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_943_1",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "103",
+        "instructions": "210",
+        "total_instructions": "210",
+        "calls": "",
+        "basicblocks": "26",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "reg<unsigned short>",
+        "file": "D:\/Xilinx\/Vitis_HLS\/2023.2\/common\/technology\/autopilot\\utils\/x_hls_utils.h",
+        "fileloc": "222",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "Bytes2AXIMMvideo",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "1275",
+        "instructions": "44",
+        "total_instructions": "66",
+        "calls": "11",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "226",
+        "instructions": "26",
+        "total_instructions": "26",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "AXIvideo2MultiPixStream",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "213",
+        "instructions": "48",
+        "total_instructions": "174",
+        "calls": "4 4 6 9 2",
+        "basicblocks": "4",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "MultiPixStream2Bytes",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "103",
+        "instructions": "88",
+        "total_instructions": "298",
+        "calls": "3",
+        "basicblocks": "18",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "v_frmbuf_wr",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "115",
+        "instructions": "53",
+        "total_instructions": "635",
+        "calls": "10",
+        "basicblocks": "1",
+        "loads": {
+            "G": "2"
+        }
+    },
+    "9": {
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_width",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "226",
+        "instructions": "64",
+        "total_instructions": "64",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "FrmbufWrHlsDataFlow",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "69",
+        "instructions": "37",
+        "total_instructions": "582",
+        "calls": "1 7 8 5",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1285_1",
+        "file": "C:\/Users\/XF\/Desktop\/chiplabdemo\/chiplab\/fpga\/loongson\/2023.2\/system_run.runs\/v_frmbuf_wr_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "1285",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

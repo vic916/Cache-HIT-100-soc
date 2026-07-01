@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="char_library_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1755617788">
+  <File Type="PA-TCL" Name="char_library.tcl"/>
+  <File Type="REPORTS-TCL" Name="char_library_reports.tcl"/>
+  <File Type="RDS-RDS" Name="char_library.vds"/>
+  <File Type="RDS-UTIL" Name="char_library_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="char_library_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="char_library.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/char_library" RelGenDir="$PGENDIR/char_library">
+    <File Path="$PPRDIR/../../../IP/xilinx_ip/char_library/char_library.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="char_library"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/char_library" RelGenDir="$PGENDIR/char_library">
+    <File Path="$PPRDIR/../../../IP/xilinx_ip/char_library/char_library.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="char_library"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
